@@ -33,18 +33,20 @@ export default function Nav(props: Props) {
     setMobileOpen((prevState) => !prevState);
   };
 
+  /* Use for mobile view */
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Box
         component="img"
-        src="/Optimax Logo.png"
+        src={`${process.env.PUBLIC_URL}/logo.svg`}
         alt="Logo"
         sx={{
-          height: 40,
+          height: 50,
           my: 2,
           mx: 'auto',
         }}
       />
+
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -89,9 +91,9 @@ export default function Nav(props: Props) {
           >
             <Box
               component="img"
-              src="/logo.svg"
+              src={`${process.env.PUBLIC_URL}/logo.svg`}
               alt="logo"
-              sx={{ height: 32, display: { xs: 'none', sm: 'block' } }}
+              sx={{ height: 50, display: { xs: 'none', sm: 'block' } }}
             />
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>

@@ -18,7 +18,7 @@ function App() {
         onAnimationComplete={() => setShowOverlay(true)}
         style={{
           position: 'relative',
-          backgroundImage: "url('https://images.pexels.com/photos/8973132/pexels-photo-8973132.jpeg?_gl=1*g5fll9*_ga*MTg5NDAyOTgwMC4xNzUyNTgwNTgz*_ga_8JE65Q40S6*czE3NTI1ODA1ODMkbzEkZzAkdDE3NTI1ODA1ODMkajYwJGwwJGgw')",
+          backgroundImage: `url(${process.env.PUBLIC_URL + '/backimg.jpg'})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '100vh',
