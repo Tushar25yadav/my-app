@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import Form from "./components/Form";
 import Heading from "./components/Heading";
 import Nav from "./components/Nav";
