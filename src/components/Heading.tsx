@@ -13,8 +13,6 @@ export default function Heading() {
         Optimizing Resources. Maximizing Profit.
       </motion.h1>
 
-      <br />
-
       <motion.h3
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
