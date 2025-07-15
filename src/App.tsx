@@ -27,7 +27,7 @@ function App() {
           justifyContent: 'center',
           overflow: 'hidden',
         }}
-      >
+      />
         <div
           style={{
             marginTop: 120,
@@ -64,7 +64,6 @@ function App() {
         >
           <Form />
         </div>
-      </motion.div>
       <Sample />
     </>
   );
