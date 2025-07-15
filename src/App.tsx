@@ -6,8 +6,6 @@ import Nav from "./components/Nav";
 import Sample from "./components/Sample";
 
 function App() {
-  const [showOverlay, setShowOverlay] = useState(false);
-
   return (
     <>
       <Nav />
@@ -15,7 +13,6 @@ function App() {
         initial={{ scale: 1.05, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 2, ease: "easeInOut" }}
-        onAnimationComplete={() => setShowOverlay(true)}
         style={{
           position: 'relative',
           backgroundImage: `url(${process.env.PUBLIC_URL + '/backimg.png'})`,
