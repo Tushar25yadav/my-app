@@ -68,10 +68,13 @@ export default function Nav(props: Props) {
       <AppBar
         component="nav"
         sx={{
-          backgroundColor: 'rgba(255, 255, 255, 0.1)',
-          backdropFilter: 'blur(5px)',
-          WebkitBackdropFilter: 'blur(5px)',
+          backgroundColor: 'transparent',
           boxShadow: 'none',
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          zIndex: 10, 
         }}
       >
         <Toolbar>
