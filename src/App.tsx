@@ -33,7 +33,6 @@ function App() {
 
       <Nav />
 
-
       {/* Heading Overlay */}
       <div
         style={{
