@@ -7,7 +7,6 @@ import Sample from "./components/Sample";
 function App() {
   const { scrollY } = useScroll();
 
-  // Parallax effect on Y-axis background movement
   const bgY = useTransform(scrollY, [0, 500], ["0%", "50%"]);
 
   return (
